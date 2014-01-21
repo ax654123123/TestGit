@@ -1,0 +1,27 @@
+//
+// Prefix header for all source files of the 'TuNiuIpad' target in the 'TuNiuIpad' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "HJManagedImageV.h"
+    #import "HJImageUtility.h"
+    #import "ASIHTTPRequest.h"
+    #import "SBJson/SBJson.h"
+    #import "TXASIHttp.h"
+    #import "TuNiuIpadAppDelegate.h"
+    #import "Global.h"
+    #import "MBProgressHUD.h"
+    #import "SearchBar.h"
+
+#define LIFTTUIJIAN_URL @"http://ipad.htyou.com/mobile/ipad_gallery.action"
+#define RIGHTTUIJIAN_URL @"http://ipad.htyou.com/mobile/ipad_visa.action"
+#define TEST_URL @"http://ipad.htyou.com/mobile/ipad_tourorder.action?"//teamcode=HT-ANZ-1130927-00159&sessionid=83840908-8c58-43e3-92ff-0690eb3a190a"
+#endif
